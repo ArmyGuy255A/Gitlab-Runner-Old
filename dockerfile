@@ -3,7 +3,6 @@ FROM ubuntu:20.04
 LABEL Author="Phil Dieppa"
 LABEL Email="mrdieppa@gmail.com"
 LABEL BaseImage="ubuntu:20.04"
-LABEL RunnerVersion=${RUNNER_VERSION}
 
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.0.2/dumb-init_1.0.2_amd64 /usr/bin/dumb-init
 RUN chmod +x /usr/bin/dumb-init
